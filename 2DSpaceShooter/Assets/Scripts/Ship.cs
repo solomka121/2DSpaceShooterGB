@@ -22,14 +22,14 @@ internal sealed class Ship : IMove, IRotate
         _rotationImplementation = rotationImplementation;
     }
 
-    public void Move(float horizontal, float vertical, float deltaTime)
+    public void Move(float horizontal, float vertical)
     {
-        _moveImplementation.Move(horizontal, vertical, deltaTime);
+        _moveImplementation.Move(horizontal, vertical);
     }
 
-    public void Rotation(float horizontal , float deltaTime)
+    public void Rotation(float horizontal)
     {
-        _rotationImplementation.Rotation(horizontal , deltaTime);
+        _rotationImplementation.Rotation(horizontal);
     }
 
     public void AddAcceleration()
